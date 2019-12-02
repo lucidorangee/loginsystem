@@ -1,0 +1,14 @@
+extends layout
+
+block content
+   h2.page-header Components
+   p What component should be added?
+   form(method='post',action='/users/component')
+      label Component Name
+      input.form-control(name='name',type='text',
+      placeholder='Enter component name')
+      .form-group
+      label Component Quantity
+      input.form-control(name='quantity',type='password',
+      placeholder='Enter Quantity')
+      input.btn.btn-primary( type = 'submit', name='submit', value='Submit')
